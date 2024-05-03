@@ -1,0 +1,10 @@
+{
+  "extends": "@create-figma-plugin/tsconfig",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2018",
+    "lib": ["ES2018", "DOM"],
+    "types": ["@figma/plugin-typings"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
