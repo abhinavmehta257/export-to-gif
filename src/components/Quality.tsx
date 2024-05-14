@@ -3,17 +3,13 @@ import { h } from "preact";
 import { useState } from "react";
 
 export default function Quality() {
-    const [value, setValue] = useState<string>('foo');
+    const [value, setValue] = useState<string>('1X');
     const options: Array<DropdownOption> = [{
-      value: 'foo'
+      value: '1X'
     }, {
-      value: 'bar'
+      value: '2X'
     }, {
-      value: 'baz'
-    }, '-', {
-      header: 'Header'
-    }, {
-      value: 'qux'
+      value: '3X'
     }];
     function handleValueChange(newValue: string) {
         console.log(newValue);

@@ -3,17 +3,13 @@ import { h } from "preact";
 import { useState } from "react";
 
 export default function FrameRate() {
-    const [value, setValue] = useState<string>('foo');
+    const [value, setValue] = useState<string>('30');
     const options: Array<DropdownOption> = [{
-      value: 'foo'
+      value: '30'
     }, {
-      value: 'bar'
+      value: '60'
     }, {
-      value: 'baz'
-    }, '-', {
-      header: 'Header'
-    }, {
-      value: 'qux'
+      value: '120'
     }];
     function handleValueChange(newValue: string) {
         console.log(newValue);
